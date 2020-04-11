@@ -8,13 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController{
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        
     }
-
-
+    @IBAction func clickedButton(_ sender: Any) {
+        performSegue(withIdentifier: "tobitkilerVC", sender: nil)
+        
+    }
+    
 }
 
